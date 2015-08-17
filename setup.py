@@ -22,6 +22,8 @@ setup(
         ],
     },
     tests_require=[
+        "pytest     >= 2.7.0",
+        "pytest-cov >=1.8.1",
     ],
     test_suite='tests',
 )

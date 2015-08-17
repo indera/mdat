@@ -12,6 +12,11 @@ help:
 test:
 	python setup.py test
 
+coverage:
+	# requires "pip install pytest pytest-cov" or virtualenv venv && . venv/bin/activate && python setup.py test && make coverage
+	# py.test --tb=short -s --cov-report term-missing --cov-report html tests/
+	py.test --tb=short -s --cov mdat --cov-config tests/.coveragerc --cov-report term-missing --cov-report html tests/
+
 sdist:
 	python setup.py sdist
 

@@ -1,0 +1,8 @@
+# Configure coverage tool (py.test --cov)
+#
+
+[run]
+omit = xyz
+
+[report]
+show_missing = True
